@@ -10,7 +10,12 @@ class TV:
         self.channel = channel
         self.volume = volume
 # Methods for switch
-
+    def turnOn(self) -> None:
+        self.on = True
+    
+    def turnOff(self) -> None:
+        self.off = False
+ 
 # Methods for channel
     # Use conditional statement for limits in channel number
 
