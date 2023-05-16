@@ -41,21 +41,37 @@ class TV:
             print(f"Volume {volume} does not exit! Please try again.")
 
 # Methods for channel control
+
 # Set channel value to none first
     def channel_up(self) -> None:
-    # Algorithm for adding and subtracting channel value
+    # Algorithm for adding channel value
         if self.channel + 1 <= 120:
             self.channel = self.channel + 1
         else:
             print(f"Channel {self.channel + 1} does not exist! Please try again.")
 
+# Set channel value to none first
     def channel_down(self) -> None:
-    # Algorithm for adding and subtracting channel value
+    # Algorithm for subtracting channel value
         if self.channel - 1 >= 1:
             self.channel = self.channel - 1
         else:
             print(f"Channel {self.channel - 1} does not exist! Please try again.")
 
 # Methods for volume control
-    # Set volume value to none first
+
+# Set volume value to none first
+    def volume_up(self) -> None:
     # Algorithm for adding and subtracting volume value
+        if self.volume + 1 <= 7:
+            self.volume = self.volume + 1
+        else:
+            print(f"Volume {self.volume + 1} does not exist! Please try again.")
+
+# Set volume value to none first
+    def volume_down(self) -> None:
+    # Algorithm for adding and subtracting volume value
+        if self.volume + 1 >= 1:
+            self.volume = self.volume - 1
+        else:
+            print(f"Volume {self.volume - 1} does not exist! Please try again.")
