@@ -10,7 +10,7 @@ class TV:
     def __init__(self, channel, volume):
         self.channel = channel
         self.volume = volume
-        
+
 # Methods for switch
     def turn_on(self) -> None:
         self.on = True
@@ -40,9 +40,21 @@ class TV:
         else:
             print(f"Volume {volume} does not exit! Please try again.")
 
-# Methods for channel control 
-    # Set channel value to none first
+# Methods for channel control
+# Set channel value to none first
+    def channel_up(self) -> None:
     # Algorithm for adding and subtracting channel value
+        if self.channel + 1 <= 120:
+            self.channel = self.channel + 1
+        else:
+            print(f"Channel {self.channel + 1} does not exist! Please try again.")
+
+    def channel_down(self) -> None:
+    # Algorithm for adding and subtracting channel value
+        if self.channel - 1 >= 1:
+            self.channel = self.channel - 1
+        else:
+            print(f"Channel {self.channel - 1} does not exist! Please try again.")
 
 # Methods for volume control
     # Set volume value to none first
