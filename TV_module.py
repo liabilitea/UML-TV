@@ -6,10 +6,11 @@ class TV:
     volume: int
     on: bool
     
-# Create methds for default constructor 
-    def __init__(self, channel, volume):
-        self.channel = channel
-        self.volume = volume
+# Create methods for default constructor 
+    def __init__(self):
+        self.channel = 1
+        self.volume = 1
+        self.on = False
 
 # Methods for switch
     def turn_on(self) -> None:
