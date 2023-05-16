@@ -9,5 +9,10 @@ tv1.set_channel(30);
 tv1.set_volume(3);
 
 # Create tv2
+tv2 = TV_module.TV();
+tv2.set_channel(3);
+tv2.set_volume(2);
 
-# Print 
+# Print
+
+ 
