@@ -20,15 +20,15 @@ class TV:
     def getChannel(self) -> int:
         return self.channel
     
-    def setChannel(self) -> None:
+    def setChannel(self, channel) -> None:
     # Use conditional statement for limits in channel number
         if channel >= 1 and channel <= 120:
             self.channel = channel
         else:
             print(f"Channel {channel} does not exist! Please try again")
 
-
 # Methods for volume
+    def getVolume()
     # Use conditional statement for limits in channel number
 
 # Methods for channel control 
