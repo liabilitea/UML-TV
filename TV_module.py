@@ -62,7 +62,7 @@ class TV:
 
 # Set volume value to none first
     def volume_up(self) -> None:
-    # Algorithm for adding and subtracting volume value
+    # Algorithm for adding volume value
         if self.volume + 1 <= 7:
             self.volume = self.volume + 1
         else:
@@ -70,7 +70,7 @@ class TV:
 
 # Set volume value to none first
     def volume_down(self) -> None:
-    # Algorithm for adding and subtracting volume value
+    # Algorithm for subtracting volume value
         if self.volume + 1 >= 1:
             self.volume = self.volume - 1
         else:
