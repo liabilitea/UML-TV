@@ -17,7 +17,16 @@ class TV:
         self.off = False
  
 # Methods for channel
+    def getChannel(self) -> int:
+        return self.channel
+    
+    def setChannel(self) -> None:
     # Use conditional statement for limits in channel number
+        if channel >= 1 and channel <= 120:
+            self.channel = channel
+        else:
+            print(f"Channel {channel} does not exist! Please try again")
+
 
 # Methods for volume
     # Use conditional statement for limits in channel number
