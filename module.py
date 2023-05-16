@@ -1,9 +1,14 @@
 # Create a module to call later 
 
 # Create class and list down attributes as stated in UML
-
+class TV: 
+    channel: int
+    volume: int
+    on: bool
 # Create methds for default constructor 
-
+    def __init__(self, channel, volume):
+        self.channel = channel
+        self.volume = volume
 # Methods for switch
 
 # Methods for channel
